@@ -7,4 +7,5 @@
 .form-container.active{
     scale: 1 ;
     opacity: 1 ;
+    display: flex;
 }
