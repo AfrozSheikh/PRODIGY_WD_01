@@ -1,11 +1,12 @@
 const userTab = document.querySelector("[data-userWeather]") ; 
 const searchTab = document.querySelector("[data-searchedWeather]") ; 
 const userContainer = document.querySelector(".weather-container");
-
+const searchForm = document.querySelector('[data-searchForm]');
 const grantAccessContainer = document.querySelector(".grant-location-container");
-const searchForm = document.querySelector("[data-grantAccess]");
+
 const loadingScreen = document.querySelector(".loading-container");
 const userInfoContainer = document.querySelector(".user-info-container");
+const grantAccessButton = document.querySelector('[data-grantAccess]');
 
 // Initailly needed variable 
 
@@ -112,7 +113,7 @@ userTab.addEventListener('click' , ()=> {
      cloudiness.innerText = weatherInfo?.clouds?.all ;   
  }
 
-   searchForm.addEventListener('click', getLocation) ; 
+ grantAccessButton.addEventListener('click' , getLocation);
    
 
    function getLocation() {
