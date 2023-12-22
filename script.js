@@ -107,10 +107,10 @@ userTab.addEventListener('click' , ()=> {
     
     description.innerText = weatherInfo?.weather?.[0]?.description ;
      weatherIcon.src= `https://openweathermap.org/img/w/${weatherInfo?.weather?.[0]?.icon}.png`
-     temperature.innerText =` ${weatherInfo?.main?.temp} ` ; 
-     windspeed.innerText = weatherInfo?.wind?.speed ; 
-     humidity.innerText = weatherInfo?.main?.humidity ; 
-     cloudiness.innerText = weatherInfo?.clouds?.all ;   
+     temperature.innerText = `${weatherInfo?.main?.temp} °C`;
+     windspeed.innerText = `${weatherInfo?.wind?.speed} m/s` ; 
+     humidity.innerText = `${weatherInfo?.main?.humidity} %` ; 
+     cloudiness.innerText =`${ weatherInfo?.clouds?.all }%` ;   
  }
 
  grantAccessButton.addEventListener('click' , getLocation);
