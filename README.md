@@ -1,3 +1,3 @@
-# PRODIGY_WD_05
+# PRODIGY_WD_01
 
 A WEather App created using HTML CSS JAVASCRIPT
